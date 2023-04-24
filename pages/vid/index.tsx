@@ -7,6 +7,11 @@ export default function Index() {
     autoplay: false,
     fluid: true,
     controls: true,
+    controlBar: {
+      'liveDisplay': true,
+      'pictureInPictureToggle': false
+  },
+
     
     sources: [
       {
