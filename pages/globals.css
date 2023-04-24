@@ -3,25 +3,132 @@
 @tailwind utilities;
 
 .custom {
-    background-color:#9999ff;
-background-image:
-radial-gradient(at 15% 88%, hsla(19,79%,71%,1) 0px, transparent 50%),
-radial-gradient(at 8% 15%, hsla(64,69%,77%,1) 0px, transparent 50%),
-radial-gradient(at 78% 74%, hsla(156,88%,61%,1) 0px, transparent 50%),
-radial-gradient(at 93% 31%, hsla(29,90%,66%,1) 0px, transparent 50%),
-radial-gradient(at 96% 87%, hsla(202,85%,70%,1) 0px, transparent 50%),
-radial-gradient(at 23% 3%, hsla(243,61%,77%,1) 0px, transparent 50%),
-radial-gradient(at 89% 90%, hsla(108,70%,76%,1) 0px, transparent 50%);
+    background-color:hsla(261,0%,0%,1);
+    background-image:
+    radial-gradient(at 43% 41%, hsla(193,71%,71%,1) 0px, transparent 50%),
+    radial-gradient(at 77% 51%, hsla(276,72%,74%,1) 0px, transparent 50%),
+    radial-gradient(at 39% 22%, hsla(73,73%,63%,1) 0px, transparent 50%),
+    radial-gradient(at 40% 83%, hsla(149,98%,61%,1) 0px, transparent 50%),
+    radial-gradient(at 66% 47%, hsla(128,77%,75%,1) 0px, transparent 50%),
+    radial-gradient(at 33% 16%, hsla(293,89%,63%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 52%, hsla(328,79%,79%,1) 0px, transparent 50%);
 }
 
 .custom2 {
-    background-color:#9999ff;
-background-image:
-radial-gradient(at 15% 88%, hsla(19,79%,71%,1) 0px, transparent 50%),
-radial-gradient(at 8% 15%, hsla(64,69%,77%,1) 0px, transparent 50%),
-radial-gradient(at 78% 74%, hsla(156,88%,61%,1) 0px, transparent 50%),
-radial-gradient(at 93% 31%, hsla(29,90%,66%,1) 0px, transparent 50%),
-radial-gradient(at 96% 87%, hsla(202,85%,70%,1) 0px, transparent 50%),
-radial-gradient(at 23% 3%, hsla(243,61%,77%,1) 0px, transparent 50%),
-radial-gradient(at 89% 90%, hsla(108,70%,76%,1) 0px, transparent 50%);
+    background-color:hsla(329,100%,2%,1);
+    background-image:
+    radial-gradient(at 13% 1%, hsla(215,87%,64%,1) 0px, transparent 50%),
+    radial-gradient(at 73% 8%, hsla(279,74%,79%,1) 0px, transparent 50%),
+    radial-gradient(at 15% 55%, hsla(187,67%,72%,1) 0px, transparent 50%),
+    radial-gradient(at 2% 65%, hsla(94,76%,72%,1) 0px, transparent 50%),
+    radial-gradient(at 55% 15%, hsla(184,74%,73%,1) 0px, transparent 50%),
+    radial-gradient(at 49% 43%, hsla(321,82%,70%,1) 0px, transparent 50%),
+    radial-gradient(at 63% 78%, hsla(304,86%,78%,1) 0px, transparent 50%);
 }
+
+.border1 {
+    border-radius: 50px;
+background: #e0e0e0;
+box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+}
+
+.button1 {
+    --glow-color: rgb(217, 176, 255);
+    --glow-spread-color: rgba(191, 123, 255, 0.781);
+    --enhanced-glow-color: rgb(231, 206, 255);
+    --btn-color: rgb(100, 61, 136);
+    border: .1em solid var(--glow-color);
+    padding: .8em 1em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 1em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+   }
+   
+   .button1::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+   }
+   
+   .button1:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 2em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+   }
+   
+   .button1:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+           0 0 2.5em 2em var(--glow-spread-color),
+           inset 0 0 .5em .25em var(--glow-color);
+   }
+
+  
+
+.button2 {
+    --glow-color: rgb(255, 176, 209);
+    --glow-spread-color: rgba(34, 92, 79, 0.781);
+    --enhanced-glow-color: rgb(231, 206, 255);
+    --btn-color: rgb(61, 136, 92);
+    border: .1em solid var(--glow-color);
+    padding: .8em 1em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 1em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+   }
+   
+   .button2::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+   }
+   
+   .button2:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 2em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+   }
+   
+   .button2:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+           0 0 2.5em 2em var(--glow-spread-color),
+           inset 0 0 .5em .25em var(--glow-color);
+   }

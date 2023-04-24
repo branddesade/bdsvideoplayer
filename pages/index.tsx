@@ -10,9 +10,9 @@ export default function Index() {
     controlBar: {
       'liveDisplay': true,
       'pictureInPictureToggle': false
-  },
+    },
 
-    
+
     sources: [
       {
         src: '//nginx.yaje.box.ca/cov1.mp4',
@@ -22,28 +22,31 @@ export default function Index() {
   }
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 custom bg-slate-950">
+    <main className="flex min-h-screen flex-col items-center justify-between p-12 custom bg-slate-950">
 
-<div className='text-slate-900 text-3xl'>
-Coveñas 1
-</div>
+
+<h1 className="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-2xl lg:text-3xl"><span className="text-transparent bg-clip-text bg-gradient-to-r to-slate-900 from-slate-500">Coveñas 1</span></h1>
+
+
 
       <>
-      <Player {...videoJsOptions} />
-    </>
+        <Player {...videoJsOptions} />
+      </>
 
-      <div className='text-red-800'>
-      𓂀𓁨𓁰𓁩𓁣𓀿𓀫𓀒𓀏𓀀𓂀
+
+
+      <div className='text-red-800 my-7 '>
+        𓂀𓁨𓁰𓁩𓁣𓀿𓀫𓀒𓀏𓀀𓂀
       </div>
-      <div className='underline text-left text-blue-600'>
-      <Link href={'/vid/'}>Ver Coveñas 2</Link>
+      <div className='button2 my-4'>
+        <Link href={'/vid/'}>Ver Coveñas 2</Link>
       </div>
 
-      <div className='text-left text-green-600 bg-slate-900'>
-      <Link href={'https://nginx.yaje.box.ca/cov1.mp4'}>Descargar ⇩</Link>
+      <div className='button1 my-4'>
+        <Link href={'https://nginx.yaje.box.ca/cov1.mp4'}>Descargar ⇩</Link>
       </div>
-      
+
     </main>
-    
+
   )
 }
