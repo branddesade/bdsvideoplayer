@@ -1,6 +1,5 @@
 import { useCallback, useEffect, useState } from 'react'
 import videojs from 'video.js'
-import 'videojs-youtube'
 
 interface PlayerProps {
   techOrder: string[]
@@ -25,7 +24,6 @@ export default function Player(props: PlayerProps) {
 
   return (
     <>
-      <h1>The implementation below is using react functions</h1>
       <div data-vjs-player>
         <video ref={onVideo} className="video-js" playsInline />
       </div>

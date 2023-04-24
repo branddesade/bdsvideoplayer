@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Player from '../components/Player'
+import Player from '../../components/Player'
 
 export default function Index() {
   const videoJsOptions = {
@@ -10,29 +10,31 @@ export default function Index() {
     
     sources: [
       {
-        src: '//sojourner.whatbox.ca:24507/cov1.mp4',
+        src: '//sojourner.whatbox.ca:24507/cov2.mp4',
         type: 'video/mp4',
       },
     ],
   }
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 custom bg-slate-950">
+    <main className="flex min-h-screen flex-col items-center justify-between p-24 custom2 bg-slate-950">
 
 <div className='text-slate-900 text-3xl'>
-Coveñas 1
+Coveñas 2
 </div>
 
       <>
       <Player {...videoJsOptions} />
     </>
 
-      <div className='text-red-800'>
+      
+    <div className='text-red-800'>
       𓂀𓁨𓁰𓁩𓁣𓀿𓀫𓀒𓀏𓀀𓂀𓁨𓁰𓁩𓁣𓀿𓀫𓀒𓀏𓀀𓂀𓁨𓁰𓁩𓁣𓀿𓀫𓀒𓀏𓀀𓂀
       </div>
       <div className='underline text-left text-blue-600'>
-      <Link href={'/vid/'}>Coveñas 2</Link>
+      <Link href={'/'}>Coveñas 1</Link>
       </div>
+      
       
     </main>
     

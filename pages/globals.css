@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom {
+    background-color:#9999ff;
+background-image:
+radial-gradient(at 15% 88%, hsla(19,79%,71%,1) 0px, transparent 50%),
+radial-gradient(at 8% 15%, hsla(64,69%,77%,1) 0px, transparent 50%),
+radial-gradient(at 78% 74%, hsla(156,88%,61%,1) 0px, transparent 50%),
+radial-gradient(at 93% 31%, hsla(29,90%,66%,1) 0px, transparent 50%),
+radial-gradient(at 96% 87%, hsla(202,85%,70%,1) 0px, transparent 50%),
+radial-gradient(at 23% 3%, hsla(243,61%,77%,1) 0px, transparent 50%),
+radial-gradient(at 89% 90%, hsla(108,70%,76%,1) 0px, transparent 50%);
+}
+
+.custom2 {
+    background-color:#9999ff;
+background-image:
+radial-gradient(at 15% 88%, hsla(19,79%,71%,1) 0px, transparent 50%),
+radial-gradient(at 8% 15%, hsla(64,69%,77%,1) 0px, transparent 50%),
+radial-gradient(at 78% 74%, hsla(156,88%,61%,1) 0px, transparent 50%),
+radial-gradient(at 93% 31%, hsla(29,90%,66%,1) 0px, transparent 50%),
+radial-gradient(at 96% 87%, hsla(202,85%,70%,1) 0px, transparent 50%),
+radial-gradient(at 23% 3%, hsla(243,61%,77%,1) 0px, transparent 50%),
+radial-gradient(at 89% 90%, hsla(108,70%,76%,1) 0px, transparent 50%);
+}
