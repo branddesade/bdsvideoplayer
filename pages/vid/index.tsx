@@ -4,7 +4,7 @@ import Player from '../../components/Player'
 export default function Index() {
   const videoJsOptions = {
     techOrder: ['html5'],
-    autoplay: false,
+    autoplay: true,
     fluid: true,
     controls: true,
     controlBar: {
