@@ -10,7 +10,7 @@ export default function Index() {
     
     sources: [
       {
-        src: '//sojourner.whatbox.ca:24507/cov1.mp4',
+        src: '//nginx.yaje.box.ca/cov1.mp4',
         type: 'video/mp4',
       },
     ],
