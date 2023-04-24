@@ -31,7 +31,11 @@ Coveñas 1
       𓂀𓁨𓁰𓁩𓁣𓀿𓀫𓀒𓀏𓀀𓂀
       </div>
       <div className='underline text-left text-blue-600'>
-      <Link href={'/vid/'}>Coveñas 2</Link>
+      <Link href={'/vid/'}>Ver Coveñas 2</Link>
+      </div>
+
+      <div className='text-left text-green-600 bg-slate-900'>
+      <Link href={'https://nginx.yaje.box.ca/cov1.mp4'}>Descargar ⇩</Link>
       </div>
       
     </main>
