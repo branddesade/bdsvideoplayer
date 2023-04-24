@@ -28,7 +28,7 @@ Coveñas 1
     </>
 
       <div className='text-red-800'>
-      𓂀𓁨𓁰𓁩𓁣𓀿𓀫𓀒𓀏𓀀𓂀𓁨𓁰𓁩𓁣𓀿𓀫𓀒𓀏𓀀𓂀𓁨𓁰𓁩𓁣𓀿𓀫𓀒𓀏𓀀𓂀
+      𓂀𓁨𓁰𓁩𓁣𓀿𓀫𓀒𓀏𓀀𓂀
       </div>
       <div className='underline text-left text-blue-600'>
       <Link href={'/vid/'}>Coveñas 2</Link>
